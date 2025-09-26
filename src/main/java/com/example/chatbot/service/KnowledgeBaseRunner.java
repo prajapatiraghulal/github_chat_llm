@@ -22,6 +22,6 @@ public class KnowledgeBaseRunner {
 
         );
 
-        baseCrawler.crawlAndStore(handbookUrls,1);
+//        baseCrawler.crawlAndStore(handbookUrls,1);
     }
 }

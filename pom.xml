@@ -68,12 +68,12 @@
             <artifactId>jsoup</artifactId>
             <version>1.16.1</version>
         </dependency>
-        <!-- Selenium WebDriver -->
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-java</artifactId>
-            <version>4.16.0</version>
-        </dependency>
+<!--        &lt;!&ndash; Selenium WebDriver &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.seleniumhq.selenium</groupId>-->
+<!--            <artifactId>selenium-java</artifactId>-->
+<!--            <version>4.16.0</version>-->
+<!--        </dependency>-->
 
         <!-- Spring Data JPA -->
         <dependency>
