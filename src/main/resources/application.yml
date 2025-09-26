@@ -1,0 +1,34 @@
+spring:
+  application:
+    name: "chatbot"
+  datasource:
+    url: ${SPRING_DATASOURCE_URL}
+    username: ${SPRING_DATASOURCE_URL}
+    password: ${SPRING_DATASOURCE_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+
+openai:
+  api:
+    key: ${OPENAI_API_KEY}
+    baseUrl: ${OPENAI_API_URL}
+    embedding: "/embeddings"
+    chat: "/chat/completions"
+google:
+  api:
+    key: ${GOOGLE_API_KEY}
+    baseUrl: ${GOOGLE_API_URL}
+    embedding: "/models/gemini-embedding-001:embedContent"
+    chat: "/models/gemini-2.0-flash:generateContent"
+
+embedding:
+  provider: google  # default provider, can switch to google/other
+chat:
+  provider: google
+
+
