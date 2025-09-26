@@ -17,14 +17,14 @@ openai:
   api:
     key: ${OPENAI_API_KEY}
     baseUrl: ${OPENAI_API_URL}
-    embedding: "/embeddings"
-    chat: "/chat/completions"
+    embedding: "/v1/embeddings"
+    chat: "/v1/chat/completions"
 google:
   api:
     key: ${GOOGLE_API_KEY}
     baseUrl: ${GOOGLE_API_URL}
-    embedding: "/models/gemini-embedding-001:embedContent"
-    chat: "/models/gemini-2.0-flash:generateContent"
+    embedding: "/v1beta/models/gemini-embedding-001:embedContent"
+    chat: "/v1beta/models/gemini-2.0-flash:generateContent"
 
 embedding:
   provider: google  # default provider, can switch to google/other
